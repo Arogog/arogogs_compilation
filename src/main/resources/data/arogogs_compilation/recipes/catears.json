@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC"
+  ],
+  "key": {
+    "C": {
+      "item": "arogogs_compilation:catear"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "arogogs_compilation:catears",
+    "count": 1
+  }
+}
+}
