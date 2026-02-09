@@ -1,6 +1,7 @@
 package net.arogog.arogogs_compilation;
 
 import com.mojang.logging.LogUtils;
+import net.arogog.arogogs_compilation.items.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,10 +20,12 @@ public class ArogogsCompilation
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-
+//тело
     public ArogogsCompilation()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
