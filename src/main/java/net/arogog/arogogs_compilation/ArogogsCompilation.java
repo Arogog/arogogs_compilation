@@ -21,6 +21,7 @@ public class ArogogsCompilation
     private static final Logger LOGGER = LogUtils.getLogger();
 
 //тело
+    // денис сосал?
     public ArogogsCompilation()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
